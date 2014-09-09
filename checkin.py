@@ -85,7 +85,6 @@ def getStatuses(id, initial):
         list.append(type)
     return list
 
-
 def checkout(stats, comment, initial):
     """Poor mans two-phase commit"""
     transaction = ITransaction(comment) if initial else Transaction(comment)
